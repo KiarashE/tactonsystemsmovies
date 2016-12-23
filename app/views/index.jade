@@ -2,4 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Tripple Alo Alo Alo - Very very Welcome to #{title}
+  p Tripple Alo Alo Alo alo - Very very Welcome to #{title}
+  div(ng-app='')
+    p Input something in the input box:
+    p Name:
+    input(type='text', ng-model='name')
+    p(ng-bind='name')
